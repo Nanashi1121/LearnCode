@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics - CodeBasics</title>
+    <link rel="stylesheet" href="../styles/lesson.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">CodeBasics</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#courses">Courses</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="lesson-container">
+        <aside class="lesson-sidebar">
+            <h3>JavaScript Basics</h3>
+            <ul>
+                <li class="active"><a href="#">Variables</a></li>
+                <li><a href="#">Data Types</a></li>
+                <li><a href="#">Operators</a></li>
+                <li><a href="#">Conditionals</a></li>
+                <li><a href="#">Loops</a></li>
+                <li><a href="practice/javascript-practice.html" class="practice-link">Practice Exercises</a></li>
+            </ul>
+        </aside>
+
+        <main class="lesson-content">
+            <h1>JavaScript Variables</h1>
+            <div class="lesson-text">
+                <p>Variables are used to store information that can be referenced and manipulated in a program. They provide a way to label data with a descriptive name.</p>
+                
+                <h2>Declaring Variables</h2>
+                <p>In JavaScript, you can declare variables using three different keywords:</p>
+                
+                <h3>var</h3>
+                <pre><code>var message = "Hello, World!";</code></pre>
+                <p>The <code>var</code> keyword is the older way to declare variables. It has function scope.</p>
+                
+                <h3>let</h3>
+                <pre><code>let count = 10;</code></pre>
+                <p>The <code>let</code> keyword was introduced in ES6. It has block scope, which makes it preferable to <code>var</code> in most cases.</p>
+                
+                <h3>const</h3>
+                <pre><code>const PI = 3.14159;</code></pre>
+                <p>The <code>const</code> keyword is used for variables that won't be reassigned. It also has block scope.</p>
+                
+                <h2>Variable Naming Rules</h2>
+                <ul>
+                    <li>Names can contain letters, digits, underscores, and dollar signs</li>
+                    <li>Names must begin with a letter, $, or _</li>
+                    <li>Names are case sensitive (y and Y are different variables)</li>
+                    <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+                </ul>
+                
+                <h2>Examples</h2>
+                <pre><code>// Number variable
+let age = 25;
+
+// String variable
+let name = "John Doe";
+
+// Boolean variable
+let isStudent = true;
+
+// Array variable
+let colors = ["red", "green", "blue"];
+
+// Object variable
+let person = {
+  firstName: "Jane",
+  lastName: "Doe",
+  age: 30
+};</code></pre>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="#" class="nav-button prev-button">Previous</a>
+                <a href="practice/javascript-practice.html" class="nav-button next-button">Practice Exercises</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 CodeBasics. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/lesson.js"></script>
+</body>
+</html>
